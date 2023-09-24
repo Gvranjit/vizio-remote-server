@@ -8,6 +8,6 @@ const app = express();
 app.use(cors({ origin: "*", optionsSuccessStatus: 200 }));
 app.use(express.json());
 app.use(router);
-app.listen(1000, () => {
-  console.log("listening on port 1000");
+app.listen(env.PORT, () => {
+  console.log("listening on port", env.PORT);
 });

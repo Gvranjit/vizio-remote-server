@@ -7,6 +7,7 @@ console.log(env);
 const envSchema = z.object({
   AUTH_KEY: z.string(),
   IP: z.string(),
+  PORT: z.string(),
 });
 type Env = z.infer<typeof envSchema>;
 let validatedEnv: Env;
