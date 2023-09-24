@@ -1,8 +1,8 @@
 import smartcast from "vizio-smart-cast";
-import { IP } from "./constants.json";
+import { env } from "./config/env";
 import readline from "readline";
 
-const tv = new smartcast(IP);
+const tv = new smartcast(env.IP);
 
 // configure cmd line input
 const rl = readline.createInterface({
